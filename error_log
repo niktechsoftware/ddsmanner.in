@@ -1,0 +1,10 @@
+[23-Feb-2017 05:45:55 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/gfincuct/public_html/ddsmanner.in/application/views/pgallery.php on line 66
+[25-Feb-2017 05:57:59 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home/gfincuct/public_html/ddsmanner.in/application/controllers/welcome.php on line 107
+[28-Feb-2017 04:10:10 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/gfincuct/public_html/ddsmanner.in/application/controllers/welcome.php on line 163
+[20-Mar-2017 04:02:48 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/gfincuct/public_html/ddsmanner.in/application/views/pgallery.php on line 85
+[10-Apr-2017 05:30:25 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/gfincuct/public_html/ddsmanner.in/application/views/welcome_message.php on line 12
+[10-Apr-2017 05:31:29 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/gfincuct/public_html/ddsmanner.in/application/views/welcome_message.php on line 12
+[10-Apr-2017 05:31:31 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/gfincuct/public_html/ddsmanner.in/application/views/welcome_message.php on line 12
+[23-May-2017 03:07:59 Etc/GMT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gfincuct/public_html/ddsmanner.in/application/views/circulars.php on line 26
+[23-May-2017 03:08:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gfincuct/public_html/ddsmanner.in/application/views/circulars.php on line 26
+[16-Sep-2017 08:04:17 Etc/GMT] PHP Parse error:  syntax error, unexpected '?' in /home/ddsmaoat/public_html/application/views/circulars.php on line 35
