@@ -99,7 +99,7 @@ class Welcome extends CI_Controller {
 	}
 	
 	public function saveEnquery(){
-		$data['academicyear']	=	$this->input->post("academicyear");	
+		$data['academicyear'] =	$this->input->post("academicyear");	
 		$data['class']	=	$this->input->post("class");
 		$data['stu_first_name']	=	$this->input->post("firstname");
 		$data['stu_last_name']	=	$this->input->post("lastname");
@@ -110,7 +110,7 @@ class Welcome extends CI_Controller {
 		$data['mobile']	=	$this->input->post("mobileno");
 		$data['phone']	=	$this->input->post("phoneno");
 		$data['gender']	=	$this->input->post("genderid");
-		$data['address']	=	$this->input->post("address");
+		$data['address'] =	$this->input->post("address");
 		$data['city']	=	$this->input->post("city");
 		$data['state']	=	$this->input->post("state");
 		$data['remark']	=	$this->input->post("remarks");

@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://ddsmanner.in/';
+$config['base_url']	= 'http://localhost/ddsmanner.in/';
 
 /*
 |--------------------------------------------------------------------------

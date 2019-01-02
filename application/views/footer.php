@@ -29,25 +29,25 @@
 									</font>
 									<?php
 
-/* counter */
+									/* counter */
 
-//opens countlog.txt to read the number of hits
-$datei = fopen("./counter.txt","r");
-$count = fgets($datei,50000);
-fclose($datei);
-$count=$count + 1 ;
-?><font size="5" color="lightgreen"><?php
-echo "$count" ;
+									//opens countlog.txt to read the number of hits
+									$datei = fopen("./counter.txt","r");
+									$count = fgets($datei,50000);
+									fclose($datei);
+									$count=$count + 1 ;
+									?><font size="5" color="lightgreen"><?php
+									echo "$count" ;
 
-?></font></i><?php
+									?></font></i><?php
 
 
-// opens countlog.txt to change new hit number
-$datei = fopen("./counter.txt","w");
-fwrite($datei, $count);
-fclose($datei);
+									// opens countlog.txt to change new hit number
+									$datei = fopen("./counter.txt","w");
+									fwrite($datei, $count);
+									fclose($datei);
 
-?>
+									?>
 									
 									
 									

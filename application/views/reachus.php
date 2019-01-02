@@ -47,6 +47,8 @@ margin-top: 25px;
     transition: all 0.3s;
    
 }
+
+}
 </style>
 <style>
 	.page-header p a { color:#fff;}
@@ -62,6 +64,7 @@ margin-top: 25px;
     padding-left: 10px;
 	border-left: 2px solid #1e4671;
 	}
+
 </style>
 <div class="gray-line"></div>
 <div class="page-header pattern-bg">
@@ -79,18 +82,23 @@ margin-top: 25px;
             </div>
         </div>
     </div>
-</div><!--main content start //-->
+</div>
+
+<!--main content start //-->
 
 <div class="main-content" style="background-color:#fff">
     <div class="container" style="margin-top:40px;margin-bottom:40px;">
         <div class="row">            
+			
 			<div class="span8" style="margin-bottom:20px;">
 				<h2 style="background: #444; width:100%; border-bottom: 1px solid #fff; color:#fff;margin-bottom:0px;font-weight:100;font-size: 20px;">
 					<i class="fa fa-thumb-tack" aria-hidden="true" style="padding: 12px;"></i>
 					Google Map Location
 				</h2>
-				<div style="width: 100%"><iframe width="100%" height="400" src="http://www.citymaps.ie/create-google-map/map.php?width=100%&amp;height=400&amp;hl=en&amp;q=%20chiraiyakot%2C%20mau%2CIndia+(DDS%20Manner%20Higher%20Secondary%20School)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/medir-distancia-area.html">Medir la distancia entre puntos</a> en <a href="http://www.mapsdirections.info/">www.mapsdirections.info</a></iframe></div><br />
+				<div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="508" id="gmap_canvas" src="https://maps.google.com/maps?q=DDS%20Manner%20Higher%20Seconday%20School&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/webdesign/">webdesigner</a></div><style>.mapouter{text-align:right;height:508px;width:770px;}.gmap_canvas {overflow:hidden;background:none!important;height:508px;width:770px;}</style></div>	
+
 			</div>
+			
 			 <div class="span4">
 				<h2 style="background: #444; width:100%; border-bottom: 1px solid #fff; color:#fff;margin-bottom:0px;font-weight:100;font-size: 20px;">
 				<i class="fa fa-newspaper-o" aria-hidden="true" style="padding: 12px;"></i>
