@@ -8,21 +8,26 @@
  * 
  *
  */
-
-
+?>
+<!--<marquee behavior="scroll" direction="up" 
+           onmouseup="this.setAttribute('scrollamount', 5, 0);">-->
+<?php
 
 $v = $this->db->get("notice");
 $i = 1 ;
 if($v->num_rows()>0){
 	 foreach($v->result() as $r):?>
-	<font style="font-size: 15px;font-style: italic;color:#333;">
+	  
+	 	<p class="text-center" style="font-size: 15px;color: #95C23D; text-align: center;"><?php echo $r->subject."<br>";?>  </p>
+	<font style="font-size: 12px;font-style: italic;color:#333;">
 						<?php echo $i.") ".$r->message."<br>";?>
 						</font>
-						<font style="font-size: 15px;color: #95C23D;"><?php echo $r->subject."<br>";?>  </font>
-		
+					
+		 
 	<?php 
 	$i++; endforeach;
-	?>
+	?> 
+	<!--</marquee>-->
 	<br>
 
 	<?php 
@@ -32,10 +37,10 @@ if($v->num_rows()>0){
 	<br>
 	
 	<font style="font-size: 15px;font-style: italic;color:#333;">
-						<?php echo $i.") ".'<a href="http://ddsmanner.in/assets/TimeTableHalfYearlyExam2018-19.pdf">Download Time Table For Half Yearly Examination 2018-19</a>'; $i++;?>
+						<a href="http://ddsmanner.in/assets/TimeTableHalfYearlyExam2018-19.pdf">Download Time Table For Half Yearly Examination 2018-19</a>
 						</font></br>
 						<font style="font-size: 15px;color: #95C23D;">  
-						        	<?php echo $i.") ".'<a href="http://ddsmanner.in/index.php/welcome/syllabus" >Blue Print (syllabus & pattern ) of Half yearly Exam </a>';?>
+						        	<a href="http://ddsmanner.in/index.php/welcome/syllabus" >Blue Print (syllabus & pattern ) of Half yearly Exam </a>
 						</font>
 		
 	

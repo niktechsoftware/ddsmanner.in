@@ -75,11 +75,14 @@ $this->load->view("header");?>
 				<div class="image-set" >
 				<?php $t =$this->db->get("gallery");
 				if($t->num_rows() >0){
+				   
 				$i=1;
 				foreach($t->result() as $ta):
+				   //  print_r($ta);
 				?>
-				<a class="example-image-link" href="<?php echo base_url();?>ddsmanner/assets/gal/<?php echo $ta->image;?>" data-lightbox="example-set" data-title="welcome."><img class="example-image" src="<?php echo base_url();?>ddsmanner/assets/gal/<?php echo $ta->image;?>" alt="" style="width: 140px; height: 120px;padding: 10px;"/></a>
-				<?php $i++; endforeach;
+				<a class="example-image-link" href="<?php echo base_url();?>admin/assets/images/<?php echo $ta->image;?>" data-lightbox="example-set" data-title="welcome."><img class="example-image" src="<?php echo base_url();?>admin/assets/images/<?php echo $ta->image;?>" alt="" style="width: 140px; height: 120px;padding: 10px;"/></a>
+				<?php $i++;
+				endforeach;
 				}
 				
 				else{

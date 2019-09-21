@@ -64,7 +64,7 @@
         <div class="row">
 			<!-- Page Content start //-->
 			<div class="span12">	
-			 <p><img src="<?php echo base_url();?>assets/images/ddsschoolcalander.jpg" alt="" /></p>		
+			 <p><img src="<?php echo base_url();?>assets/images/calendar.png" alt="" /></p>		
 				</div>
         </div>
     </div>    

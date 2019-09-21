@@ -255,10 +255,10 @@ img.displayed {
 								class="span2 hvr-shutter-out-horizontal"
 								style="margin-bottom: 10px; padding: 10px 0px; text-align: center; margin-top: 10px; margin-top: 20px;">Admission
 								Enquiry</a> 
-								<a href="http://niktechsoftware.com/school/index.php/login" class="span2 hvr-shutter-out-horizontal"
+								<a href="https://schoolerp-niktech.in/school/index.php/login" class="span2 hvr-shutter-out-horizontal"
 								style="margin-bottom: 10px; padding: 10px 0px; text-align: center;">Teacher Login
 								</a>
-								<a href="http://niktechsoftware.com/school/index.php/login" class="span2 hvr-shutter-out-horizontal"
+								<a href="https://schoolerp-niktech.in/school/index.php/login" class="span2 hvr-shutter-out-horizontal"
 								style="margin-bottom: 10px; padding: 10px 0px; text-align: center;">Student Login
 								</a>
 						</div>
@@ -309,9 +309,13 @@ img.displayed {
 										onMouseOver="this.stop();" onMouseOut="this.start();"
 										style="color: #fff;">
 										<ul style="padding-top: 3px;">
-											<li><font face="times, serif" size="4" color="FFFFCC">DDS Manner Higher Secondary School Announces Registrations
-												open for the session 2018-19 for Grades Pre- Nursery to IX.
+										    <?php 
+										    $query = $this->db->query("SELECT * FROM latestnews ORDER BY id DESC LIMIT 1");
+										    $row= $query->row();  
+										  // foreach($v->result() as $row):?>
+											<li><font face="times, serif" size="4" color="FFFFCC"><?php echo $row->news; ?>.
 												For further details please contact us.</font></li>
+												<?php //endforeach;?>
 										</ul>
 									</marquee>
 								</div>
@@ -356,16 +360,30 @@ img.displayed {
 
 							<div class="span4">
 								<h2
-									style="background: #053161; line-height: 55px; width: 100%; border-bottom: 1px solid #fff; color: #fff; margin-bottom: 0px; font-weight: 100; font-size: 20px; border-top: 4px solid #95c23d; margin-top: 10px;">
+									style="background: #053161; line-height: 55px; width: 100%;border-bottom: 1px solid #fff; color: #fff; margin-bottom: 0px; font-weight: 100; font-size: 20px; border-top: 4px solid #95c23d; margin-top: 10px;">
 									<i class="fa fa-newspaper-o" aria-hidden="true"
 										style="padding: 12px;"></i> <i><font face="times, serif" size="5" color="FFFFCC">Notice Board</font></i>
 								</h2>
 								<div class="intro">
-									<iframe name="I1"
+								<!--	<iframe name="I1"
 										src="<?php echo base_url();?>index.php/welcome/circulars"
-										scrolling="no" style="width: 100%; height: 400px" border="0"
+										scrolling="no" style="width: 100%;" border="0"
 										frameborder="0"> Your browser does not support inline frames
-										or is currently configured not to display inline frames. </iframe>
+										or is currently configured not to display inline frames. </iframe>-->
+										
+										
+										<?php
+										$v = $this->db->get("notice");
+                                        $i = 1 ;
+                                        if($v->num_rows()>0){
+                                        	 foreach($v->result() as $r):?>
+                                        	 	<p class="text-center" style="font-size: 15px;color: #95C23D; text-align: center;text-transform: uppercase;"><?php echo $r->subject."<br>";?>  </p>
+                                        	    <font style="font-size: 12px;font-style: italic;color:#333;">
+                                        						<?php echo $i.") ".$r->message."<br>";?>
+                        						</font>
+                                        	<?php $i++; endforeach;	?> 
+                                        	<br>
+                                        <?php } ?>
 								</div>
 							</div>
 							<div class="span8">
